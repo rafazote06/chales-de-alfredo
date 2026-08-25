@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chalés de Alfredo — pousada de montanha com chalés na serra</title>
+<meta name="description" content="Chalés românticos na serra, com piscina aquecida privativa, cachoeira aquecida no banho e lareira. Simule suas datas e fale com a gente no WhatsApp.">
+<meta name="theme-color" content="#7B2D26">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Chalés de Alfredo — pousada de montanha">
+<meta property="og:description" content="Chalés românticos na serra, com piscina aquecida privativa, cachoeira aquecida no banho e lareira.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+<!-- ============================================================
+     Sprite de ícones (SVG inline, traço 2px). Não renderiza.
+     ============================================================ -->
+<svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="ic-lareira" viewBox="0 0 24 24"><path d="M12 21.5c3.6 0 6.4-2.6 6.4-5.9 0-5-6.4-12.1-6.4-12.1S5.6 10.6 5.6 15.6c0 3.3 2.8 5.9 6.4 5.9Z"/><path d="M12 21.5c1.8 0 3.2-1.2 3.2-2.8 0-2.4-3.2-5.6-3.2-5.6s-3.2 3.2-3.2 5.6c0 1.6 1.4 2.8 3.2 2.8Z"/></symbol>
+    <symbol id="ic-cama" viewBox="0 0 24 24"><path d="M2.5 20.5v-8A2.5 2.5 0 0 1 5 10h14a2.5 2.5 0 0 1 2.5 2.5v8"/><path d="M4.5 10V6.5A2.5 2.5 0 0 1 7 4h10a2.5 2.5 0 0 1 2.5 2.5V10"/><path d="M12 4.5V10M2.5 17h19"/></symbol>
+    <symbol id="ic-etiqueta" viewBox="0 0 24 24"><path d="M20.6 12.6 12.2 21a2 2 0 0 1-2.8 0l-6.6-6.6a2 2 0 0 1-.6-1.4V4.6A1.6 1.6 0 0 1 3.8 3h8.4c.5 0 1 .2 1.4.6l7 7a2 2 0 0 1 0 2.8Z"/><path d="M7.3 7.3h.01"/></symbol>
+    <symbol id="ic-cafe" viewBox="0 0 24 24"><path d="M3 8.5h13v5.8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8.5Z"/><path d="M16 10.5h2.4a2.6 2.6 0 0 1 0 5.2H16"/><path d="M7 2.5v2.3M11 2.5v2.3"/><path d="M2 22h16"/></symbol>
+    <symbol id="ic-wifi" viewBox="0 0 24 24"><path d="M2.5 9.5a13.5 13.5 0 0 1 19 0"/><path d="M6 13a8.5 8.5 0 0 1 12 0"/><path d="M9.4 16.5a3.7 3.7 0 0 1 5.2 0"/><path d="M12 20.2h.01"/></symbol>
+    <symbol id="ic-folha" viewBox="0 0 24 24"><path d="M21 3C11.5 3 4.5 8.3 4.5 16.2c0 1.8.5 3.3.5 3.3s6.9-.6 10.8-4.5C19.2 11.5 21 7.2 21 3Z"/><path d="M4.6 20.4C8 14.2 12.8 9.8 17.6 6.9"/></symbol>
+    <symbol id="ic-montanha" viewBox="0 0 24 24"><path d="M2 19h20"/><path d="m3.5 19 5.5-9.5 3.4 5 2.6-4.2L21 19"/><path d="m9 9.5 1.6 2.7"/></symbol>
+    <symbol id="ic-banheira" viewBox="0 0 24 24"><path d="M2.5 12h19v3a5 5 0 0 1-5 5h-9a5 5 0 0 1-5-5v-3Z"/><path d="M6.5 12V6.2a2.2 2.2 0 0 1 4.4 0"/><path d="M9.3 7.6h3.2"/><path d="m6 20-1.2 2M18 20l1.2 2"/></symbol>
+    <symbol id="ic-trilha" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="M6 8.1v3.4a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3" stroke-dasharray="2.5 2.8"/></symbol>
+    <symbol id="ic-pet" viewBox="0 0 24 24"><ellipse cx="5.4" cy="12" rx="2" ry="2.6"/><ellipse cx="9.6" cy="7.4" rx="2" ry="2.6"/><ellipse cx="14.4" cy="7.4" rx="2" ry="2.6"/><ellipse cx="18.6" cy="12" rx="2" ry="2.6"/><path d="M12 12.6c3.2 0 5.6 2.5 5.6 4.9 0 2-1.7 3.4-3.7 3.4-1 0-1.4-.4-1.9-.4s-.9.4-1.9.4c-2 0-3.7-1.4-3.7-3.4 0-2.4 2.4-4.9 5.6-4.9Z"/></symbol>
+    <symbol id="ic-cozinha" viewBox="0 0 24 24"><path d="M6 2.5v6.2a2.2 2.2 0 0 0 4.4 0V2.5"/><path d="M8.2 10.9V21.5"/><path d="M17.5 2.5v19"/><path d="M17.5 2.5c-2.2 1.7-3.3 4.3-3.3 6.9 0 1.5 1.3 2.7 3.3 2.7"/></symbol>
+    <symbol id="ic-piscina" viewBox="0 0 24 24"><path d="M7.6 14V5.9A2.7 2.7 0 0 1 10.3 3.2"/><path d="M14.4 14V5.9a2.7 2.7 0 0 1 2.7-2.7"/><path d="M7.6 7.6h6.8M7.6 10.8h6.8"/><path d="M2 16.8c2.2 0 2.2 1.6 4.5 1.6s2.2-1.6 4.5-1.6 2.2 1.6 4.5 1.6 2.2-1.6 4.5-1.6"/><path d="M2 20.6c2.2 0 2.2 1.6 4.5 1.6s2.2-1.6 4.5-1.6 2.2 1.6 4.5 1.6 2.2-1.6 4.5-1.6"/></symbol>
+    <symbol id="ic-estrela" viewBox="0 0 24 24"><path d="m12 2.8 2.9 5.9 6.5 1-4.7 4.5 1.1 6.5-5.8-3.1-5.8 3.1L7.3 14 2.6 9.6l6.5-.9L12 2.8Z" fill="currentColor" stroke="none"/></symbol>
+    <!-- marca do cabeçalho/rodapé: linha de serra + sol (elemento de assinatura da marca) -->
+    <symbol id="ic-marca" viewBox="0 0 40 26"><circle cx="31" cy="7.5" r="3.2"/><path d="M2 20.5 10.5 8.5l6 8L21 10l8 10.5"/><path d="M1.5 24h37"/></symbol>
+    <symbol id="ic-coracoes" viewBox="0 0 40 26"><path d="M15 22.6 9.6 17.4C7 14.9 7 10.9 9.6 8.7a4.4 4.4 0 0 1 5.4.4 4.4 4.4 0 0 1 5.4-.4c2.6 2.2 2.6 6.2 0 8.7L15 22.6Z"/><path d="M25 22.6l-5.4-5.2C17 14.9 17 10.9 19.6 8.7a4.4 4.4 0 0 1 5.4.4 4.4 4.4 0 0 1 5.4-.4c2.6 2.2 2.6 6.2 0 8.7L25 22.6Z"/></symbol>
+    <symbol id="ic-whatsapp" viewBox="0 0 24 24"><path d="M20.6 11.9a8.5 8.5 0 0 1-12.7 7.4L3.4 20.6l1.3-4.4A8.5 8.5 0 1 1 20.6 11.9Z"/><path d="M16.9 14.3c-.3-.15-1.7-.83-1.96-.93-.26-.1-.45-.14-.64.15-.19.28-.74.92-.9 1.11-.17.19-.34.21-.63.07-.29-.14-1.21-.44-2.3-1.41-.85-.75-1.42-1.68-1.59-1.96-.16-.29-.02-.44.13-.58.13-.13.29-.34.43-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.28-1 .97-1 2.37s1.02 2.75 1.16 2.94c.14.19 2.01 3.06 4.87 4.29.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.11-.26-.19-.55-.33Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+    <symbol id="ic-facebook" viewBox="0 0 24 24"><path d="M14.5 8.5V6.8c0-.8.6-1.3 1.4-1.3h1.6V2.5h-2.6a4.4 4.4 0 0 0-4.4 4.4v1.6H8v3.2h2.5v9.8h4v-9.8h2.6l.5-3.2h-3.1Z"/></symbol>
+    <symbol id="ic-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="m10.2 9.2 4.8 2.8-4.8 2.8V9.2Z"/></symbol>
+    <symbol id="ic-calendario" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 2.5v4M16 2.5v4"/></symbol>
+    <symbol id="ic-mais" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="ic-menos" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="ic-fechar" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></symbol>
+    <symbol id="ic-esq" viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7"/></symbol>
+    <symbol id="ic-dir" viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+    <symbol id="ic-alerta" viewBox="0 0 24 24"><path d="M12 3.2 22 20H2L12 3.2Z"/><path d="M12 9.5v4.6M12 17.3h.01"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6 7-11.2a7 7 0 1 0-14 0C5 15.5 12 21.5 12 21.5Z"/><circle cx="12" cy="10" r="2.8"/></symbol>
+    <symbol id="ic-telefone" viewBox="0 0 24 24"><path d="M15.5 21.5C8.6 21.5 2.5 15.4 2.5 8.5V6a2 2 0 0 1 2-2h2.3a1 1 0 0 1 1 .8l.8 3.6a1 1 0 0 1-.5 1.1L6.4 10.6a12 12 0 0 0 7 7l1.1-1.7a1 1 0 0 1 1.1-.5l3.6.8a1 1 0 0 1 .8 1v2.3a2 2 0 0 1-2 2h-2.5Z"/></symbol>
+    <symbol id="ic-email" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+    <symbol id="ic-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.2"/><path d="M12 6.8V12l3.4 2.2"/></symbol>
+    <symbol id="ic-pessoas" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.6"/><path d="M2.8 20.5c0-3.4 2.8-6.2 6.2-6.2s6.2 2.8 6.2 6.2"/><path d="M16.5 5.1a3.6 3.6 0 0 1 0 6.9M17.5 14.6a6.2 6.2 0 0 1 3.7 5.9"/></symbol>
+    <symbol id="ic-chave" viewBox="0 0 24 24"><circle cx="7.5" cy="16.5" r="4"/><path d="m10.4 13.6 8.4-8.4M16.2 7.8l2.2 2.2M13.8 10.2l2.2 2.2"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================================================
+     Cabeçalho
+     ============================================================ -->
+<header class="site-header" id="cabecalho">
+  <div class="header-bar container">
+    <a class="marca" href="#topo" aria-label="Chalés de Alfredo — ir para o início">
+      <svg class="marca-icone" viewBox="0 0 40 26" aria-hidden="true" focusable="false"><use href="#ic-marca"></use></svg>
+      <span class="marca-texto">
+        <span class="marca-nome">Chalés de Alfredo</span>
+        <span class="marca-sub">Serra · Aconchego · Natureza</span>
+      </span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul class="nav-lista">
+        <li><a href="#chales">Chalés</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-acoes">
+      <a class="btn btn-brasa btn-sm header-cta" href="#busca">Reservar</a>
+      <button class="btn-icone nav-toggle" type="button" id="btnMenu" aria-expanded="false" aria-controls="menuMobile">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-menu"></use></svg>
+        <span class="sr-only">Abrir menu de navegação</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile fullscreen -->
+<div class="menu-mobile" id="menuMobile" role="dialog" aria-modal="true" aria-label="Menu de navegação" hidden>
+  <div class="menu-mobile-topo container">
+    <span class="menu-mobile-titulo">Menu</span>
+    <button class="btn-icone menu-fechar" type="button" id="btnFecharMenu">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-fechar"></use></svg>
+      <span class="sr-only">Fechar menu</span>
+    </button>
+  </div>
+  <nav class="menu-mobile-nav container" aria-label="Navegação principal (celular)">
+    <ul>
+      <li><a href="#chales" data-fecha-menu>Chalés</a></li>
+      <li><a href="#experiencias" data-fecha-menu>Experiências</a></li>
+      <li><a href="#avaliacoes" data-fecha-menu>Avaliações</a></li>
+      <li><a href="#contato" data-fecha-menu>Contato</a></li>
+    </ul>
+    <a class="btn btn-brasa btn-bloco" href="#busca" data-fecha-menu>Ver disponibilidade</a>
+    <a class="btn btn-fantasma-claro btn-bloco" href="#" data-wa="menu" rel="noopener" target="_blank">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-whatsapp"></use></svg>
+      Falar no WhatsApp
+    </a>
+  </nav>
+</div>
+
+<main id="conteudo">
+
+  <!-- ==========================================================
+       1. Hero
+       ========================================================== -->
+  <section class="hero" id="topo" aria-labelledby="heroTitulo">
+    <div class="hero-midia">
+      <img
+        src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&h=1000&q=72"
+        srcset="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=480&h=300&q=70 480w,
+                https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=768&h=480&q=70 768w,
+                https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&h=750&q=72 1200w,
+                https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&h=1000&q=72 1600w"
+        sizes="100vw"
+        width="1600" height="1000"
+        fetchpriority="high" decoding="async"
+        alt="Encosta da serra ao amanhecer, com neblina descendo sobre o vale verde e o sol saindo entre as nuvens.">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-conteudo container">
+      <p class="eyebrow eyebrow-claro">Serra • Aconchego • Natureza</p>
+      <h1 id="heroTitulo">Dois chalés na serra para desacelerar de verdade</h1>
+      <p class="hero-texto">
+        Piscina aquecida com vista para a serra, "cachoeira" no banho e lareira acesa.
+        Escolha suas datas, veja o valor e fale direto com a gente no WhatsApp.
+      </p>
+      <div class="hero-acoes">
+        <a class="btn btn-vinho" href="#chales">Ver chalés</a>
+        <a class="btn btn-fantasma-brasa" href="#" data-wa="hero" rel="noopener" target="_blank">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-whatsapp"></use></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <svg class="serra-linha serra-hero" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M0 52 120 30 200 44 320 12 420 40 540 22 640 46 760 18 880 42 980 26 1120 48 1240 20 1340 38 1440 26" />
+    </svg>
+  </section>
+
+  <!-- ==========================================================
+       2. Busca de disponibilidade
+       ========================================================== -->
+  <section class="secao-busca" id="busca" aria-labelledby="buscaTitulo">
+    <div class="container">
+      <form class="busca-card" id="formBusca" novalidate>
+        <h2 class="busca-titulo" id="buscaTitulo">Ver disponibilidade</h2>
+        <p class="busca-sub">Veja a disponibilidade e o valor — a reserva é confirmada no WhatsApp.</p>
+
+        <div class="busca-campos">
+          <div class="campo campo-data">
+            <label for="checkin">Check-in</label>
+            <div class="campo-controle">
+              <input type="date" id="checkin" name="checkin" autocomplete="off" required>
+              <span class="campo-data-texto" aria-hidden="true">dd/mm/aaaa</span>
+              <button type="button" class="btn-icone campo-cal" data-abrir-calendario="checkin" aria-expanded="false" aria-controls="calendarioBusca">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-calendario"></use></svg>
+                <span class="sr-only">Escolher data de check-in no calendário</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="campo campo-data">
+            <label for="checkout">Check-out</label>
+            <div class="campo-controle">
+              <input type="date" id="checkout" name="checkout" autocomplete="off" required>
+              <span class="campo-data-texto" aria-hidden="true">dd/mm/aaaa</span>
+              <button type="button" class="btn-icone campo-cal" data-abrir-calendario="checkout" aria-expanded="false" aria-controls="calendarioBusca">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-calendario"></use></svg>
+                <span class="sr-only">Escolher data de check-out no calendário</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="campo campo-hospedes">
+            <label class="campo-rotulo" id="rotuloHospedes" for="hospedes">Hóspedes</label>
+            <div class="stepper" role="group" aria-labelledby="rotuloHospedes">
+              <button type="button" class="stepper-btn" data-passo="-1" data-alvo="hospedes">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-menos"></use></svg>
+                <span class="sr-only">Remover um hóspede</span>
+              </button>
+              <input class="stepper-valor" type="number" id="hospedes" name="hospedes" value="2" min="1" max="8" step="1" inputmode="numeric" aria-describedby="hospedesAjuda">
+              <button type="button" class="stepper-btn" data-passo="1" data-alvo="hospedes">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-mais"></use></svg>
+                <span class="sr-only">Adicionar um hóspede</span>
+              </button>
+            </div>
+            <p class="campo-ajuda" id="hospedesAjuda">De 1 a 8 pessoas.</p>
+          </div>
+
+          <div class="campo campo-acao">
+            <button class="btn btn-vinho btn-bloco" type="submit">Buscar chalés</button>
+          </div>
+        </div>
+
+        <p class="form-aviso" id="buscaAviso" role="status" aria-live="polite"></p>
+
+        <!-- Calendário de 2 meses (apenas ≥768px) -->
+        <div class="calendario-popover" id="calendarioBusca" hidden>
+          <div class="calendario" data-calendario="busca"></div>
+          <div class="calendario-rodape">
+            <p class="calendario-legenda">
+              <span class="leg leg-livre"><span class="leg-amostra" aria-hidden="true"></span> Datas livres</span>
+              <span class="leg leg-ocupado"><span class="leg-amostra leg-amostra-ocupado" aria-hidden="true"></span> Sem chalé disponível</span>
+            </p>
+            <button type="button" class="btn btn-texto" data-fechar-calendario>Fechar calendário</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       3. Acomodações
+       ========================================================== -->
+  <section class="secao secao-chales" id="chales" aria-labelledby="chalesTitulo">
+    <div class="container">
+      <header class="secao-cabecalho">
+        <p class="eyebrow">Acomodações</p>
+        <h2 id="chalesTitulo">Dois chalés pensados para casais</h2>
+        <p class="secao-texto">
+          Piscina aquecida, "cachoeira" no banho e lareira acesa — cada chalé com sua própria vista para a serra.
+        </p>
+      </header>
+
+      <p class="chales-status" id="chalesStatus" role="status" aria-live="polite"></p>
+
+      <noscript>
+        <p class="nota-secao">
+          A lista de chalés e o simulador de reserva precisam de JavaScript.
+          Se preferir, fale com a gente pelo telefone ou WhatsApp informados no rodapé.
+        </p>
+      </noscript>
+
+      <ul class="grade-chales" id="listaChales"></ul>
+    </div>
+  </section>
+
+  <svg class="serra-linha serra-divisor" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0 52 120 30 200 44 320 12 420 40 540 22 640 46 760 18 880 42 980 26 1120 48 1240 20 1340 38 1440 26" />
+  </svg>
+
+  <!-- ==========================================================
+       4. Experiências
+       ========================================================== -->
+  <section class="secao secao-experiencias" id="experiencias" aria-labelledby="expTitulo">
+    <div class="container">
+      <header class="secao-cabecalho">
+        <p class="eyebrow">Experiências</p>
+        <h2 id="expTitulo">O que está incluído na estadia</h2>
+        <p class="secao-texto">
+          Nada de programação obrigatória. As coisas estão ali, prontas,
+          para quando der vontade.
+        </p>
+      </header>
+      <ul class="grade-experiencias" id="listaExperiencias"></ul>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       5. Prova social
+       ========================================================== -->
+  <section class="secao secao-avaliacoes" id="avaliacoes" aria-labelledby="avalTitulo">
+    <div class="faixa-numeros">
+      <div class="container">
+        <ul class="numeros" id="listaNumeros"></ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <header class="secao-cabecalho">
+        <p class="eyebrow">Quem já ficou</p>
+        <h2 id="avalTitulo">Depoimentos</h2>
+        <p class="secao-texto">
+          Os textos abaixo são exemplos criados para esta demonstração —
+          nenhum deles é o relato de um hóspede real.
+        </p>
+      </header>
+      <ul class="grade-depoimentos" id="listaDepoimentos"></ul>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       6. Contato + localização
+       ========================================================== -->
+  <section class="secao secao-contato" id="contato" aria-labelledby="contatoTitulo">
+    <div class="container contato-grade">
+      <div class="contato-info">
+        <header class="secao-cabecalho">
+          <p class="eyebrow">Contato</p>
+          <h2 id="contatoTitulo">Fale com a gente</h2>
+          <p class="secao-texto">
+            Atendimento por WhatsApp com pessoa de verdade. Se preferir, ligue
+            ou mande um e-mail — respondemos no mesmo dia.
+          </p>
+        </header>
+
+        <ul class="contato-lista" id="contatoLista"></ul>
+
+        <div class="contato-cta">
+          <a class="btn btn-whatsapp" href="#" data-wa="contato" rel="noopener" target="_blank">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-whatsapp"></use></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <div class="faq" id="listaFaq"></div>
+      </div>
+
+      <div class="contato-mapa">
+        <div class="mapa-placeholder" role="img" aria-label="Ilustração de mapa mostrando a estrada de acesso à pousada. A localização exata ainda será confirmada.">
+          <svg class="mapa-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+            <rect width="400" height="300" fill="#F3EDE5"/>
+            <!-- quadras / talhões -->
+            <g stroke="#E7DCD2" stroke-width="1" fill="none">
+              <path d="M0 40h400M0 100h400M0 160h400M0 220h400M0 280h400"/>
+              <path d="M50 0v300M110 0v300M170 0v300M230 0v300M290 0v300M350 0v300"/>
+            </g>
+            <!-- rio -->
+            <path d="M-10 55c50 22 68 62 128 72s112-20 162 10 130 20 130 20" fill="none" stroke="#BFD4C6" stroke-width="11" stroke-linecap="round"/>
+            <!-- estrada principal -->
+            <path d="M0 212c60-10 90-50 150-45s90 40 150 25 100-30 100-30" fill="none" stroke="#DCCBBE" stroke-width="26" stroke-linecap="round"/>
+            <path d="M0 212c60-10 90-50 150-45s90 40 150 25 100-30 100-30" fill="none" stroke="#FBF7F2" stroke-width="5" stroke-dasharray="10 12" stroke-linecap="round"/>
+            <!-- acesso de terra até a pousada -->
+            <path d="M196 152c-4-22 4-38 10-52" fill="none" stroke="#C9B4A4" stroke-width="8" stroke-linecap="round" stroke-dasharray="3 9"/>
+            <!-- mata -->
+            <g fill="none" stroke="#3A5A40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6">
+              <path d="M44 128 32 146h24zM44 118 34 133h20zM44 146v9"/>
+              <path d="M330 152 318 170h24zM330 142l-10 15h20zM330 170v9"/>
+              <path d="M96 262 84 280h24zM96 252l-10 15h20zM96 280v9"/>
+              <path d="M262 252 250 270h24zM262 242l-10 15h20zM262 270v9"/>
+              <path d="M148 74 136 92h24zM148 64l-10 15h20zM148 92v9"/>
+            </g>
+            <!-- casario da vila -->
+            <g fill="none" stroke="#B9A79B" stroke-width="2" stroke-linejoin="round">
+              <path d="M56 58h30v22H56zM52 58l19-14 19 14"/>
+              <path d="M296 232h26v20h-26zM292 232l17-13 17 13"/>
+            </g>
+            <!-- rosa dos ventos -->
+            <g fill="none" stroke="#8F6222" stroke-width="2" stroke-linecap="round" opacity=".7">
+              <path d="M364 262v-26M358 244l6-8 6 8M352 258h24"/>
+            </g>
+          </svg>
+          <div class="mapa-pin">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-pin"></use></svg>
+            <span>Chalés de Alfredo</span>
+          </div>
+        </div>
+        <p class="mapa-nota">
+          <svg class="ic ic-nota" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-alerta"></use></svg>
+          Mapa ilustrativo. Endereço completo e rota a confirmar — peça a localização
+          pelo WhatsApp que enviamos o ponto exato.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     Rodapé
+     ============================================================ -->
+<footer class="site-footer">
+  <svg class="serra-linha serra-footer" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0 52 120 30 200 44 320 12 420 40 540 22 640 46 760 18 880 42 980 26 1120 48 1240 20 1340 38 1440 26" />
+  </svg>
+
+  <div class="container">
+    <div class="footer-newsletter">
+      <form class="newsletter-form" id="formNewsletter" novalidate>
+        <div class="newsletter-texto">
+          <label class="newsletter-label" for="emailNews">Receba as datas com desconto</label>
+          <p class="newsletter-ajuda" id="newsAjuda">Um e-mail por mês, no máximo. Sem spam.</p>
+        </div>
+        <div class="newsletter-controle">
+          <input type="email" id="emailNews" name="email" placeholder="voce@email.com.br" autocomplete="email" aria-describedby="newsAjuda newsStatus" required>
+          <button class="btn btn-brasa" type="submit">Quero receber</button>
+        </div>
+      </form>
+      <p class="newsletter-status" id="newsStatus" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="footer-grade">
+      <div class="footer-col footer-marca">
+        <a class="marca marca-footer" href="#topo" aria-label="Chalés de Alfredo — ir para o início">
+          <svg class="marca-icone" viewBox="0 0 40 26" aria-hidden="true" focusable="false"><use href="#ic-marca"></use></svg>
+          <span class="marca-texto">
+            <span class="marca-nome">Chalés de Alfredo</span>
+            <span class="marca-sub">Serra · Aconchego · Natureza</span>
+          </span>
+        </a>
+        <p class="footer-sobre">
+          Pousada de montanha com chalés românticos, piscina aquecida privativa
+          e café da manhã feito na hora.
+        </p>
+        <ul class="footer-redes" id="footerRedes"></ul>
+      </div>
+
+      <nav class="footer-col" aria-labelledby="fnav1">
+        <h2 class="footer-titulo" id="fnav1">Navegar</h2>
+        <ul class="footer-links">
+          <li><a href="#chales">Chalés</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-labelledby="fnav2">
+        <h2 class="footer-titulo" id="fnav2">A estadia</h2>
+        <ul class="footer-links">
+          <li><a href="#busca">Ver disponibilidade</a></li>
+          <li><a href="#experiencias">Café da manhã</a></li>
+          <li><a href="#experiencias">Piscina aquecida</a></li>
+          <li><a href="#experiencias">Política pet</a></li>
+          <li><a href="#contato">Como chegar</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col" id="footerContato">
+        <h2 class="footer-titulo">Contato</h2>
+        <ul class="footer-contato" id="footerContatoLista"></ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <p class="footer-legal">
+        © <span id="anoAtual">2026</span> Chalés de Alfredo. Todos os direitos reservados.
+        CNPJ a confirmar.
+      </p>
+      <p class="footer-legal footer-legal-nota">
+        Imagens meramente ilustrativas, até serem substituídas pelas fotos reais dos chalés.
+        Os depoimentos exibidos neste site são exemplos ilustrativos, não relatos reais.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão flutuante de WhatsApp -->
+<a class="wa-flutuante" href="#" data-wa="flutuante" rel="noopener" target="_blank">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-whatsapp"></use></svg>
+  <span class="sr-only">Falar com os Chalés de Alfredo no WhatsApp</span>
+</a>
+
+<!-- ============================================================
+     Modal de reserva
+     ============================================================ -->
+<div class="modal-fundo" id="modalFundo" hidden></div>
+<div class="modal" id="modalReserva" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" hidden>
+  <div class="modal-topo">
+    <div>
+      <p class="eyebrow" id="modalEyebrow">Simulação de reserva</p>
+      <h2 class="modal-titulo" id="modalTitulo">Chalé</h2>
+    </div>
+    <button class="btn-icone modal-fechar" type="button" id="btnFecharModal">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-fechar"></use></svg>
+      <span class="sr-only">Fechar simulação de reserva</span>
+    </button>
+  </div>
+
+  <div class="modal-corpo">
+    <form id="formReserva" novalidate>
+      <div class="modal-campos">
+        <div class="campo campo-data">
+          <label for="mCheckin">Check-in</label>
+          <div class="campo-controle">
+            <input type="date" id="mCheckin" name="mCheckin" autocomplete="off" required>
+            <span class="campo-data-texto" aria-hidden="true">dd/mm/aaaa</span>
+          </div>
+        </div>
+        <div class="campo campo-data">
+          <label for="mCheckout">Check-out</label>
+          <div class="campo-controle">
+            <input type="date" id="mCheckout" name="mCheckout" autocomplete="off" required>
+            <span class="campo-data-texto" aria-hidden="true">dd/mm/aaaa</span>
+          </div>
+        </div>
+        <div class="campo campo-hospedes">
+          <label class="campo-rotulo" id="mRotuloHospedes" for="mHospedes">Hóspedes</label>
+          <div class="stepper" role="group" aria-labelledby="mRotuloHospedes">
+            <button type="button" class="stepper-btn" data-passo="-1" data-alvo="mHospedes">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-menos"></use></svg>
+              <span class="sr-only">Remover um hóspede</span>
+            </button>
+            <input class="stepper-valor" type="number" id="mHospedes" name="mHospedes" value="2" min="1" max="8" step="1" inputmode="numeric" aria-describedby="mHospedesAjuda">
+            <button type="button" class="stepper-btn" data-passo="1" data-alvo="mHospedes">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-mais"></use></svg>
+              <span class="sr-only">Adicionar um hóspede</span>
+            </button>
+          </div>
+          <p class="campo-ajuda" id="mHospedesAjuda">Capacidade do chalé indicada acima.</p>
+        </div>
+      </div>
+
+      <p class="form-aviso" id="modalAviso" role="status" aria-live="polite"></p>
+
+      <div class="modal-calendario">
+        <h3 class="modal-subtitulo">Datas disponíveis</h3>
+        <div class="calendario" data-calendario="modal"></div>
+        <p class="calendario-legenda">
+          <span class="leg leg-livre"><span class="leg-amostra" aria-hidden="true"></span> Livre</span>
+          <span class="leg leg-ocupado"><span class="leg-amostra leg-amostra-ocupado" aria-hidden="true"></span> Ocupado</span>
+          <span class="leg leg-sel"><span class="leg-amostra leg-amostra-sel" aria-hidden="true"></span> Sua estadia</span>
+        </p>
+      </div>
+
+      <div class="resumo" id="resumoReserva" role="status" aria-live="polite" aria-atomic="true"></div>
+
+      <div class="modal-acoes">
+        <a class="btn btn-whatsapp btn-bloco" id="btnEnviarWa" href="#" rel="noopener" target="_blank">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#ic-whatsapp"></use></svg>
+          Enviar pedido no WhatsApp
+        </a>
+        <p class="modal-nota">
+          Nada é cobrado aqui. Você é levado ao WhatsApp com a mensagem pronta
+          e a reserva só existe depois da nossa confirmação.
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
